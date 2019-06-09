@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing:border-box;
+}
+body{
+    height:1800px;
+}
+
+/*顶部标题栏*/
+#top {
+    width:100%;
+    height:60px;
+    padding-left:10%;
+    line-height:60px;
+    color: #ffffff;
+    font-size:50px;
+    font-weight:bold;
+    background-color: darkgreen;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*导航栏*/
+#nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}
+#nav .nav-center{
+    width:1190px;
+    height:48px;
+    margin:0 auto;
+}
+#nav .nav-center ul{
+    width:1190px;
+    height:48px;
+    background-color: rgba(30,100,30,0.5);
+}
+#nav .nav-center ul li{
+    width:20%;
+    height:48px;
+    float:left;
+    position:relative;
+}
+#nav .nav-center ul li a{
+    display:inline-block;
+    width:100%;
+    height:48px;
+    text-decoration: none;
+    font-size:20px;
+    text-align:center;
+    line-height:48px;
+    color:#fff;
+    cursor:pointer;
+    /*background-color: red;*/
+}
+#nav .nav-center ul li em{
+    font-style:normal;
+    color:#fff;
+    font-size:20px;
+    position: absolute;
+    left:235px;
+    top:10px;
+}
+
+/*主体内容*/
+#content{
+    width:100%;
+    height:100%;
+    margin-top:60px;
+    /*background-color: lightblue;*/
+    background: url(images/backgroundImg.gif) no-repeat fixed;
+    background-size:cover ;
+}
+.content-center{
+    width:1190px;
+    height:100%;
+    margin:0 auto;
+    /*background-color: rgba(100,150,100,0.2);*/
+    background: url(images/contentImg.jpg) no-repeat;
+    /*background:transparent;*/
+    background-size:cover ;
+    box-shadow: 0 0 20px green;
+}
+.content-img{
+    width:100%;
+    height:300px;
+    background: url("images/topImg.jpg") no-repeat 0 -200px;
+    background-size: cover;
+}
+
+/*表格*/
+.content-table{
+    margin:50px auto;
+    width:1015px;
+    height:200px;
+}
+.ta{
+    width:100%;
+    height:100%;
+    border: 2px solid green;
+    text-align:center;
+}
+.ta thead{
+    color: #ffffff;
+    background-color: green;
+}
+.ta thead tr:nth-child(1) th{
+    font-size:30px;
+    height:50px;
+}
+.ta thead tr:nth-child(2) th{
+    height:30px;
+}
+.ta tbody tr td{
+    width:145px;
+    border: 1px solid green;
+    font-weight:bold;
+}
+
+/*电子日历*/
+.Date{
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+}
+.Date .text{
+    width:100%;
+    height:70px;
+    text-align:center;
+    color:#fff;
+    background-color: blue;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    font-size:40px;
+    line-height:70px;
+    font-weight:bolder;
+}
+.Date .ElectronicDate{
+    width:100%;
+    height:430px;
+    font-size:30px;
+    font-weight:bold;
+}
+table{
+    width:100%;
+    height:100%;
+    border: 2px solid blue;
+    text-align:center;
+}
+table th{
+    color:#fff;
+}
+table tr:nth-child(2) td{
+    color:#fff;
+}
+table td{
+    border: 2px solid blue;
+}
+/*课程表的颜色被覆盖，重新设置*/
+.ta tr:nth-child(2) td{
+    color:#000;
+}
+
+/*电子时钟*/
+.Time{
+    margin:50px auto;
+    width:1000px;
+    height:500px;
+    border: 20px solid orangered;
+    border-radius:10px;
+}
+.Time .text{
+    width:100%;
+    height:50px;
+    text-align:center;
+    color:#fff;
+    background-color: orangered;
+    font-size:40px;
+    line-height:30px;
+    font-weight:bolder;
+}
+.Time .day,.Time .week,.Time .time{
+    font-size:100px;
+    text-align:center;
+    font-weight:bolder;
+}
+/*用作锚点跳转，不被固定的导航栏所遮*/
+.toB,.toT,.toD{
+    position: relative;
+    padding-top:108px;
+    margin-top:-108px;
+    background-color: transparent;
+    /*设置层级，否则会把导航a标签遮挡住而不能再次点击*/
+    z-index:-1;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="HomePageStyle.css">
+</head>
+<body>
+    <div id="top">个人主页</div>
+    <!--导航栏-->
+    <div id="nav">
+        <div class="nav-center">
+         <ul>
+                <li><a href="#">我的首页</a><em>|</em></li>
+                <li><a href="#b">我的课程表</a><em>|</em></li>
+                <li><a href="#d">电子日历</a><em>|</em></li>
+                <li><a href="#t">电子时钟</a><em>|</em></li>
+                <li><a href="#">我的账户</a></li>
+          </ul>
+        </div>
+    </div>
+    <!--主体内容-->
+    <div id="content">
+        <div class="content-center">
+            <div class="content-img"></div>
+            <!--表格-->
+            <div class="toB" id="b"></div>
+            <div class="content-table" >
+                <table class="ta" >
+                        <thead>
+                        <tr>
+                            <th colspan="7">我的课程表</th>
+                        </tr>
+                        <tr>
+                            <th>时间</th>
+                            <th></th>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">上午</td>
+                                <td>12节</td>
+                                <td>HTML5编程</td>
+                                <td></td>
+                                <td>HTML5编程</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>34节</td>
+                                <td></td>
+                                <td>设计模式</td>
+                                <td></td>
+                                <td>流媒体技术</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">下午</td>
+                                <td>56节</td>
+                                <td>P2P软件开发技术</td>
+                                <td></td>
+                                <td></td>
+                                <td>设计模式</td>
+                                <td>编译技术</td>
+                            </tr>
+                            <tr>
+                                <td>78节</td>
+                                <td></td>
+                                <td>编译技术</td>
+                                <td></td>
+                                <td>软件过程研讨</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+             </div>
+
+            <!--电子日历-->
+            <div class="toD" id="d"></div>
+            <div class="Date">
+                <div class="text">电 子 日 历</div>
+                <div class="ElectronicDate"></div>
+            </div>
+
+            <!--时间-->
+            <!--用作锚点跳转，不被固定的导航栏所遮盖-->
+            <div class="toT" id="t"></div>
+            <div class="Time">
+                <div class="text">电 子 时 钟</div>
+                <div class="day"></div>
+                <div class="week"></div>
+                <div class="time"></div>
+            </div>
+        </div>
+    </div>
+    <script src="ElectronicClock.js"></script>
+</body>
+</html>
